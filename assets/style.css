@@ -1,0 +1,129 @@
+/* arcsstandard.org — minimal institutional stylesheet */
+
+:root {
+  --text: #1a1a1a;
+  --subtle: #555;
+  --accent: #2e5d8a;
+  --border: #ccc;
+  --bg: #fff;
+  --bg-aside: #f7f8fa;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.7;
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 60px 24px 80px;
+}
+
+header {
+  border-bottom: 2px solid var(--text);
+  padding-bottom: 20px;
+  margin-bottom: 48px;
+}
+
+header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+header .subtitle {
+  font-size: 16px;
+  color: var(--subtle);
+  font-style: italic;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 12px;
+  color: var(--text);
+}
+
+p {
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.spec-link {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 12px 24px;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.spec-link:hover {
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+}
+
+.meta {
+  font-size: 14px;
+  color: var(--subtle);
+  margin-bottom: 8px;
+}
+
+.citation-block {
+  background: var(--bg-aside);
+  border-left: 3px solid var(--border);
+  padding: 16px 20px;
+  margin: 20px 0;
+  font-size: 14px;
+  font-family: 'Courier New', monospace;
+  line-height: 1.6;
+}
+
+.scope-list {
+  margin: 12px 0 20px 24px;
+  font-size: 16px;
+}
+
+.scope-list li {
+  margin-bottom: 6px;
+}
+
+.not-list {
+  margin: 12px 0 20px 24px;
+  font-size: 15px;
+  color: var(--subtle);
+}
+
+.not-list li {
+  margin-bottom: 4px;
+}
+
+footer {
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 13px;
+  color: var(--subtle);
+}
+
+@media (max-width: 600px) {
+  body { padding: 32px 16px 48px; }
+  header h1 { font-size: 22px; }
+}
